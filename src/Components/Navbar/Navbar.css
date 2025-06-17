@@ -1,0 +1,114 @@
+/* .lang{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav::-webkit-scrollbar{
+    display: none;
+}
+
+li{
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.all-cats{
+    font-size: 14px;
+}
+
+.sub-lists{
+    overflow: auto;
+    overflow-y: hidden;
+}
+.sub-lists::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:767px){
+    .location-search{
+        display: none;
+    }
+    .locations{
+        display: none;
+    }
+}
+
+@media (max-width:458px){
+    .main-search{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+} */
+
+/* Navbar.css */
+
+/* Mobile responsiveness for navbar */
+@media (max-width: 768px) {
+  .location-search {
+    display: none;
+  }
+  
+  .main-search {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .lang {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-search input {
+    font-size: 14px;
+  }
+}
+
+/* Custom scrollbar for categories */
+.overflow-x-auto::-webkit-scrollbar {
+  height: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Smooth transitions for hover effects */
+nav a, nav button, nav span {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Sell button hover effect */
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search input focus effects */
+input:focus {
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+/* Category navigation hover effects */
+.category-nav-item:hover {
+  color: #14b8a6;
+  background-color: rgba(20, 184, 166, 0.05);
+}
