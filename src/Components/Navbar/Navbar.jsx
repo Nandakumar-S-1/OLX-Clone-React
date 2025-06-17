@@ -6,6 +6,7 @@ import "./Navbar.css";
 import searchwt from '../../assets/search.svg'
 
 function Navbar(props) {
+    
     const {toggleModal, toggleModalSell} = props
 
     return (
@@ -21,7 +22,7 @@ function Navbar(props) {
                             placeholder="Search City,Area or Locality..."
                             name=""
                             id=""
-                            className="w-[50px] sm:w-[150px] md:w-[250px] lg:w-[270px] p-3 pl-8 pr-8 border-black border-solid border-2 rounded-md placeholder:text-ellipsis focus:outline-none focus:border-teal-300"
+                           className="w-[50px] sm:w-[150px] md:w-[250px] lg:w-[270px] p-3 pl-8 pr-8 border-black border-solid border-2 rounded-md placeholder:text-ellipsis focus:outline-none focus:border-teal-300"
                         />
                         <img
                             src={arrow}
