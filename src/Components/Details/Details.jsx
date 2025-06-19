@@ -104,6 +104,22 @@ const Details = () => {
 
 export default Details;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import React, { useState } from "react";
 // import { useLocation } from "react-router-dom";
 // import { ItemsContext } from "../Context/Item";

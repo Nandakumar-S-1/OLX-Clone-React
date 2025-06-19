@@ -3,7 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { firestore } from "../Firebase/Firebase";
 
 const Context =createContext(null)
-export const ItemsContext =()=>useContext(Context) //example for a custom hoook
+export const ItemsContext =()=>useContext(Context) //this is kind of an example for a custom hoook
 
 export const ItemContextProvider =({children})=>{
     const [items,setItems] =useState(null) //this set item is passed to home and sell
