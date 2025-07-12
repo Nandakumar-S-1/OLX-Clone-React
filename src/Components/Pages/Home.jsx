@@ -7,6 +7,7 @@ import { ItemsContext } from '../Context/Item';
 import { fetchFromFireStore, firestore } from '../Firebase/Firebase';
 import { doc, deleteDoc, updateDoc } from 'firebase/firestore';
 import { AuthContext } from '../Context/Auth';
+import Footer  from '../Pages/Footer';
 
 const initialState = { items: [] };
 const reducer = (state, action) => {
@@ -78,6 +79,7 @@ function Home() {
       <div className="pt-24">
         <Card items={state.items} onDelete={handleDelete} onEdit={handleEdit} currentUserId={auth?.user?.uid} />
       </div>
+      <Footer/>
     </div>
   );
 }

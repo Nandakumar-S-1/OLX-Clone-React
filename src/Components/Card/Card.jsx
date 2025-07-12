@@ -1,14 +1,22 @@
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import Favorite from "../../assets/favorite.svg";
+import { userAuth } from "../Context/Auth";
+
 
 function Card({ items, onDelete, onEdit, currentUserId }) {
   //when items is not changed usememo prevents the items array from re rendering
-  //the value momoIetems is only evaluated or computed when theitems array changes 
+  //the value momoIetems is only evaluated or computed when theitems array changes
+  
+  
+  
   const memoizedItems = useMemo(() => items, [items]);
-
+  // const {user,data,setData} = userAuth()
   return (
+    
     <div className="p-6 px-4 sm:px-8 md:px-16 lg:px-24 min-h-screen bg-white">
+
+      {/* <input type="text" onChange={(e)=>setData(e.target.value)} /> */}
       <div className="mb-8">
         <h1
           className="text-2xl font-semibold mb-4"

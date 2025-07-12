@@ -11,9 +11,9 @@ createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <ItemContextProvider>
       <AuthProvider>
-        <StrictMode>
+        {/* <StrictMode> */}
           <App />
-        </StrictMode>
+        {/* </StrictMode> */}
       </AuthProvider>
     </ItemContextProvider>
   </BrowserRouter>
